@@ -7,7 +7,9 @@ translateElementY = (element, distance) =>{
 translateElementXPercent = (element, distance) =>{
     element.style.transform = `translateX(${distance})`;
 }
-
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector(".container").style.display = "initial";
+ }, false);
 window.addEventListener('scroll',function(){
     var scrollY = window.scrollY;
     if(scrollY<=(2*window.innerHeight)){
